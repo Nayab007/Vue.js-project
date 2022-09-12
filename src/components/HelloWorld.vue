@@ -3,6 +3,8 @@
   <h2 class="Email">Messages</h2>
  
 
+ 
+ 
 
  
   <pre   v-if="messages?.conversationHistory">
@@ -96,25 +98,22 @@
 .button-62 {
   background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
   border: 0;
-  border-radius: 30px;
+  border-radius: 12px;
   color: #ffffff;
-  margin: 2%;
   cursor: pointer;
   display: inline-block;
   font-size: 10px;
   line-height: 2.5;
   outline: transparent;
-  padding: 0 2rem;
+  padding: 0 1rem;
   text-align: center;
   text-decoration: none;
   transition: box-shadow 0.2s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
- 
+  white-space: nowrap;
 }
-
-
 
 .action {
   position: relative;
