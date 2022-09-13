@@ -1,11 +1,8 @@
 <template>
 
   <h2 class="Email">Messages</h2>
- 
-
- 
- 
-
+  <button class="button-62" v-on:click="removeElement(messages)">Delete</button>
+  
  
   <pre   v-if="messages?.conversationHistory">
     <h2 class=action>action:</h2>"{{ messages.conversationHistory[0].action }}"
@@ -62,6 +59,9 @@
     
     export default {
         name: 'message-api',
+
+
+  
         data(){
             return{
                 messages: {
@@ -80,6 +80,11 @@
                 .catch(e => {
                     this.errors.push(e)
                 });
+        },
+        methods: {
+            remove(id){
+               this.$delete(this.conversationHistory, id);
+            }
         }
     }
     </script>
@@ -125,8 +130,5 @@
   word-spacing: 2rem;
  
 }
-
-
-
 
     </style>
