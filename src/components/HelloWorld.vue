@@ -1,7 +1,7 @@
 <template>
 
   <h2 class="Email">Messages</h2>
-  <button class="button-62" v-on:click="removeElement(messages)">Delete</button>
+
   
  
   <pre   v-if="messages?.conversationHistory">
