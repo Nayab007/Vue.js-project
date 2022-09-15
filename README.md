@@ -1,1 +1,1 @@
- an other Vue
+ an other Vue project
