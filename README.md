@@ -1,2 +1,2 @@
  an other Vue project
- fetch email
+ fetch email data
